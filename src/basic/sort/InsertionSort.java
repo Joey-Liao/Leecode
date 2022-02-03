@@ -20,7 +20,7 @@ public class InsertionSort {
             int temp=nums[i];
             int j=i;
             //找到第一个比该元素小的位置，并将比该元素大的后移一位，或到头
-            while(j>0&&temp<nums[j-1]) {
+            while(j-1>0&&temp<nums[j-1]) {
                 nums[j]=nums[j-1];
                 j--;
             }
